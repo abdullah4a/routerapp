@@ -1,0 +1,34 @@
+<!-- <div class="home container-fluid">
+    <div class="nav-bar">
+      <h1>This is Nav Header</h1>
+      <p>This is Nav buttons Bar</p>
+    </div>
+    <div class="list-inline">
+      <div id="container-fluid">
+        this is News Feeds upper bar <code>span</code>
+      </div>
+      <div class="row">
+        <div class="brandimage">
+          <div
+            class="col-sm-4"
+            style="background-color: lavender"
+            v-for="imag in image"
+            :key="imag"
+          >
+            <img :src="imag" />
+          </div>
+          <input type="checkbox" v-model="showdes" />
+          <div class="" v-if="showdes">This image is an Hd Walpaper</div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</template>-->
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+// Make BootstrapVue available throughout your project
+    // Optionally install the BootstrapVue icon components plugin
+// route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+         /* webpackChunkName: "about" */ 
+ /* webpackChunkName: "about" */ 

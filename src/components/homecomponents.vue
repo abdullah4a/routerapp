@@ -1,55 +1,50 @@
-<template lang="HTML">
-  <div>
+<template>
+  <div id="home">
     <div class="container-fluid">
-      <h1>Hello World!</h1>
+      <h1>First Responsive app</h1>
       <p>Resize the browser window to see the effect.</p>
-      <p>
-        The columns will automatically stack on top of each other when the
-        screen is less than 768px wide.
-      </p>
-      <div class="row">
-        <div class=""
+
+      <div class="row nav justify-content-center">
+        <div
+          class="col-lg-4"
+          style="background-color: lavender; margin: 10px"
+          v-for="imag in images"
+          :key="imag"
+        >
+          <img
+            :src="imag"
+            style="width: 100%; max-width: 300px; max-height: 200px"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
->
-<!-- <div class="home container-fluid">
-    <div class="nav-bar">
-      <h1>This is Nav Header</h1>
-      <p>This is Nav buttons Bar</p>
-    </div>
-    <div class="list-inline">
-      <div id="container-fluid">
-        this is News Feeds upper bar <code>span</code>
-      </div>
-      <div class="row">
-        <div class="brandimage">
-          <div
-            class="col-sm-4"
-            style="background-color: lavender"
-            v-for="imag in image"
-            :key="imag"
-          >
-            <img :src="imag" />
-          </div>
-          <input type="checkbox" v-model="showdes" />
-          <div class="" v-if="showdes">This image is an Hd Walpaper</div>
-        </div>
-      </div>
-    </div>
-  </div> 
-</template>-->
 <script>
 import image from "E:/abdullah/RouterApp/routerapp/src/assets/1.jpg";
 import image1 from "E:/abdullah/RouterApp/routerapp/src/assets/2.jpg";
 import image2 from "E:/abdullah/RouterApp/routerapp/src/assets/3.jpg";
 import image3 from "E:/abdullah/RouterApp/routerapp/src/assets/4.jpg";
+import image4 from "E:/abdullah/RouterApp/routerapp/src/assets/Plants.jpg";
+import image5 from "E:/abdullah/RouterApp/routerapp/src/assets/mia.jpg";
+import image6 from "E:/abdullah/RouterApp/routerapp/src/assets/Frozen.jpg";
+import image7 from "E:/abdullah/RouterApp/routerapp/src/assets/Eyes.jpg";
+import image8 from "E:/abdullah/RouterApp/routerapp/src/assets/Burns.jpg";
 
 export default {
   data() {
     return {
-      images: [image, image1, image2, image3],
+      images: [
+        image,
+        image1,
+        image2,
+        image3,
+        image4,
+        image5,
+        image6,
+        image7,
+        image8,
+      ],
       showdes: false,
     };
   },

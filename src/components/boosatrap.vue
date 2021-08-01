@@ -5,7 +5,7 @@
     <b-alert variant="success" show>Success Alert</b-alert>
 
     <b-alert v-model="showDismissibleAlert" variant="danger" dismissible>
-      Dismissible Alert! is Not going to ends
+      Dismissible Alert! is Not going to end <br />you've to close it...
     </b-alert>
 
     <b-alert
@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       dismissSecs: 10,
-      dismissCountDown: 10,
+      dismissCountDown: 0,
       showDismissibleAlert: false,
     };
   },
