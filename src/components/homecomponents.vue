@@ -7,13 +7,13 @@
       <div class="row nav justify-content-center">
         <div
           class="col-lg-4"
-          style="background-color: lavender; margin: 10px"
+          style="background-color: ; margin: 10px"
           v-for="imag in images"
           :key="imag"
         >
           <img
             :src="imag"
-            style="width: 100%; max-width: 300px; max-height: 200px"
+            style="width: 100%; max-width: 400px; max-height: 300px"
           />
         </div>
       </div>
@@ -47,6 +47,11 @@ export default {
       ],
       showdes: false,
     };
+  },
+  methods: {
+    Isactive() {
+      return true;
+    },
   },
 };
 </script>

@@ -1,6 +1,12 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <img
+      id="image"
+      alt="Vue logo"
+      src="../assets/logo.png"
+      width="400px"
+      height="300px"
+    />
     <div><home /></div>
     <div><Boosatrap /></div>
   </div>
@@ -23,3 +29,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.home #image {
+  opacity: 0.75;
+}
+</style>
